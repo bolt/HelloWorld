@@ -26,6 +26,11 @@ class Extension extends \Bolt\BaseExtension
 
     }
 
+    public function getName()
+    {
+        return "Hello World";
+    }
+
     function initialize() {
 
         $this->addTwigFunction('helloworld', 'twigHelloworld');
