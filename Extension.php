@@ -2,7 +2,7 @@
 // Hello World Extension for Bolt
 // Minimum version: 0.7
 
-namespace HelloWorld;
+namespace Bolt\Extension\Bolt\HelloWorld;
 
 class Extension extends \Bolt\BaseExtension
 {
