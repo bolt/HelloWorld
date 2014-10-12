@@ -11,14 +11,14 @@ class Extension extends \Bolt\BaseExtension
         return "Hello World";
     }
 
-    function initialize() {
-
+    public function initialize()
+    {
         $this->addTwigFunction('helloworld', 'twigHelloworld');
 
     }
 
-    function twigHelloworld($name="") {
-
+    public function twigHelloworld($name="")
+    {
         // if $name isn't set, use the one from the config.yml. Unless that's empty too, then use "world".
         if (empty($name)) {
             if (!empty($this->config['name'])) {
@@ -35,9 +35,3 @@ class Extension extends \Bolt\BaseExtension
     }
 
 }
-
-
-
-
-
-
