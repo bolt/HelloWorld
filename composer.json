@@ -1,6 +1,6 @@
 {
     "name": "bolt/helloworld",
-    "description": "",
+    "description": "A small extension to add a 'Hello, World!'-greeting to your site, when using <code>{{ helloworld() }}</code> in your templates.",
     "type": "bolt-extension",
     "keywords": [],
     "require": {
