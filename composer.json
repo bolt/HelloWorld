@@ -1,10 +1,10 @@
 {
     "name": "bolt/helloworld",
-    "description": "A small extension to add a 'Hello, World!'-greeting to your site, when using {{ helloworld() }} in your templates.",
+    "description": "A small extension to add a 'Hello, World!' greeting to your site, when using {{ helloworld() }} in your templates.",
     "type": "bolt-extension",
-    "keywords": [],
+    "keywords": ["hello", "world"],
     "require": {
-        "bolt/bolt": ">=2.0.0,<3.0.0"
+        "bolt/bolt": "^3.0.0"
     },
     "license": "MIT",
     "authors": [
@@ -14,11 +14,11 @@
         }
     ],
     "autoload": {
-        "files": [
-            "init.php"
-        ],
         "psr-4": {
-            "Bolt\\Extension\\Bolt\\HelloWorld\\": ""
+            "Bolt\\Extension\\Bolt\\HelloWorld\\": "src"
         }
+    },
+    "extra": {
+        "bolt-class": "Bolt\\Extension\\Bolt\\HelloWorld\\HelloWorldExtension"
     }
 }
