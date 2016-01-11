@@ -18,7 +18,7 @@ class HelloWorldExtension extends SimpleExtension
      *
      * @return string
      */
-    public function getName()
+    public function getDisplayName()
     {
         return 'Hello, World!';
     }
@@ -62,8 +62,8 @@ class HelloWorldExtension extends SimpleExtension
      */
     protected function getDefaultConfig()
     {
-        return array(
-            'agent' => 'World'
-        );
+        return [
+            'agent' => 'World',
+        ];
     }
 }
